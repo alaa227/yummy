@@ -20,14 +20,7 @@ async function startApp() {
 
   displayPaginatedMeals(meals);
 }
-//&startApp();
-// async function getData() {
-//   let response = await fetch(
-//     `https://themealdb.com/api/json/v1/1/search.php?s=all`
-//   );
-//   let data = await response.json();
-//   // console.log(data);
-// }
+startApp();
 
 async function getPaginatedMeals(offset, limit) {
   let response = await fetch(
@@ -353,7 +346,11 @@ const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
    submit.removeAttribute("disabled");
  }
 }//*=======================================================================
-submit.addEventListener("click",function(){
+let contact = document.getElementById("contact");
+function contactt(){
+ contact.classList.replace("d-none", "d-block");;
+}
+
  
    
 })
